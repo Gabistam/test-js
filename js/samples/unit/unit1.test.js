@@ -8,4 +8,8 @@ describe('SayHello Unit Test Suites', () =>{
     it('Should return "Hello, Stam"', () => {
         expect(sayHello("Stam")).toBe("Hello, Stam")
     })
+
+    it('Should return "Bonjour, Alexandra"', ()=>{
+        expect(sayHello("Alexandra")).toBe("Bonjour Alexandra");
+    })
 })
