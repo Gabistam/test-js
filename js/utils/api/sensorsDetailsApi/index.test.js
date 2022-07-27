@@ -1,7 +1,9 @@
-import { retrieveSensorsDetailsData } from ".index/";
+import { retrieveSensorsDetailsData } from ".";
+import { data } from "../../../../data/mock-facade-detail-data.js";
 
-describe("retrieveSensorsDetailsData Unit Test Suites", () => {
-    it('Should return defined', () => {
-        expect(retrieveSensorsDetailsData()).toBeDefined();
+
+describe("sensorsDetails Unit Test Suites", () => {
+    it('Should return the mocked data', () => {
+        expect(retrieveSensorsDetailsData()).toBe(data.facade)
     })
 });
